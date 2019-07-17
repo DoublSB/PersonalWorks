@@ -1,0 +1,12 @@
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\bin\Debug\Scheduler_doublsb.exe.config
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\bin\Debug\Scheduler_doublsb.exe
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\bin\Debug\Scheduler_doublsb.pdb
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\bin\Debug\MaterialSkin.dll
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.csprojAssemblyReference.cache
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.Properties.Resources.resources
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.csproj.GenerateResource.cache
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.csproj.CoreCompileInputs.cache
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.csproj.CopyComplete
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.exe
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.pdb
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.SchedulerStart.resources
