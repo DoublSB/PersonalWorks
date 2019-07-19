@@ -10,11 +10,28 @@ using System.Windows.Forms;
 
 namespace Scheduler_doublsb
 {
-    public partial class Scheduler : MaterialSkin.Controls.MaterialForm
+    public partial class Scheduler : Form
     {
+        Main main;
+
         public Scheduler()
         {
             InitializeComponent();
+            InitializeForm();
+
+            main.Activate();
+        }
+
+        private void InitializeForm()
+        {
+            Setup_UI();
+            Create_Tray_Icon();
+        }
+
+        private void Setup_UI()
+        {
+            main = new Main();
+            main.Show();
         }
 
         private void Create_Tray_Icon()
@@ -26,20 +43,36 @@ namespace Scheduler_doublsb
             notifyIcon1.ContextMenuStrip = materialContextMenuStrip1;
         }
 
-        private void 실행ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Open(object sender, EventArgs e)
         {
+            bool isOpen = false;
+            FormCollection fc = Application.OpenForms;
 
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "Main")
+                {
+                    isOpen = true;
+                    break;
+                }
+            }
+
+            if(!isOpen) main.Show();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Exit(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
         private void SchedulerStart_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
             Create_Tray_Icon();
+        }
+
+        private void Scheduler_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

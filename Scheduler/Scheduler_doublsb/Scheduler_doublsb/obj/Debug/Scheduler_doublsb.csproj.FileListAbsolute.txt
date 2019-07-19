@@ -10,3 +10,4 @@ E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\
 E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.exe
 E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.pdb
 E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.Scheduler.resources
+E:\Github\PersonalWorks\Scheduler\Scheduler_doublsb\Scheduler_doublsb\obj\Debug\Scheduler_doublsb.Main.resources

@@ -57,25 +57,28 @@
             // 실행ToolStripMenuItem
             // 
             this.실행ToolStripMenuItem.Name = "실행ToolStripMenuItem";
-            this.실행ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.실행ToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.실행ToolStripMenuItem.Text = "Open";
-            this.실행ToolStripMenuItem.Click += new System.EventHandler(this.실행ToolStripMenuItem_Click);
+            this.실행ToolStripMenuItem.Click += new System.EventHandler(this.Open);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.Exit);
             // 
-            // SchedulerStart
+            // Scheduler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "SchedulerStart";
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(110, 66);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Scheduler";
             this.Text = "Scheduler";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SchedulerStart_FormClosing);
+            this.Load += new System.EventHandler(this.Scheduler_Load);
             this.materialContextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
