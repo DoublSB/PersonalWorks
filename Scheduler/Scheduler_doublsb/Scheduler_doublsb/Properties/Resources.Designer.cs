@@ -63,6 +63,56 @@ namespace Scheduler_doublsb.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap ControlTab_01 {
+            get {
+                object obj = ResourceManager.GetObject("ControlTab_01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ControlTab_02 {
+            get {
+                object obj = ResourceManager.GetObject("ControlTab_02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ControlTab_03 {
+            get {
+                object obj = ResourceManager.GetObject("ControlTab_03", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ControlTab_04 {
+            get {
+                object obj = ResourceManager.GetObject("ControlTab_04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ControlTab_05 {
+            get {
+                object obj = ResourceManager.GetObject("ControlTab_05", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);

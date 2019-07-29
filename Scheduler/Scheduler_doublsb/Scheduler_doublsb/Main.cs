@@ -12,41 +12,123 @@ namespace Scheduler_doublsb
 {
     public partial class Main : Form
     {
-        Graphics GFx;
+        //Controls
+        Button[] TabControlButton = new Button[5];
+
+        //Else
         ColorPalette Palette;
+        bool isDragging;
+        Point Lastpos;
 
         public Main()
         {
+            isDragging = false;
+            Palette = new ColorPalette();
+
             InitializeComponent();
             Setup_UI();
         }
 
         private void Setup_UI()
         {
-            Draw_Image();
+            Assign_UI();
+            Set_ControlSize();
+            Set_ControlColor();
         }
 
-        private void Draw_Image()
+        private void Assign_UI()
         {
-            Image ExitButtonImage = Properties.Resources.exit;
+            TabControlButton[0] = Tab_Month;
+            TabControlButton[1] = Tab_Week;
+            TabControlButton[2] = Tab_Day;
+            TabControlButton[3] = Tab_Priority;
+            TabControlButton[4] = Tab_Project;
+
+            for (int i = 0; i < TabControlButton.Length; i++)
+            {
+                int j = i;
+                TabControlButton[i].Click += delegate { Change_Tab(j); };
+            }
+        } 
+
+        private void Set_ControlColor()
+        {
+            Tab_Month.BackColor = Palette.Get(ColorPalette.Color_.CheeryPink);
+            Tab_Week.BackColor = Palette.Get(ColorPalette.Color_.Rhyme);
+            Tab_Day.BackColor = Palette.Get(ColorPalette.Color_.Cyan);
+            Tab_Priority.BackColor = Palette.Get(ColorPalette.Color_.Gray);
+            Tab_Project.BackColor = Palette.Get(ColorPalette.Color_.Pink);
+
+            Page_Month.BackgroundImage = Properties.Resources.ControlTab_01;
+            Page_Month.BackgroundImageLayout = ImageLayout.Stretch;
+
+            Page_Week.BackgroundImage = Properties.Resources.ControlTab_04;
+            Page_Week.BackgroundImageLayout = ImageLayout.Stretch;
+
+            Page_Day.BackgroundImage = Properties.Resources.ControlTab_03;
+            Page_Day.BackgroundImageLayout = ImageLayout.Stretch;
+
+            Page_Priority.BackgroundImage = Properties.Resources.ControlTab_02;
+            Page_Priority.BackgroundImageLayout = ImageLayout.Stretch;
+
+            Page_Project.BackgroundImage = Properties.Resources.ControlTab_05;
+            Page_Project.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
-
-        private void ExitButton_Click(object sender, EventArgs e)
+        private void Set_ControlSize()
         {
-            Close();
+            for (int i = 0; i < TabControlButton.Length; i++)
+            {
+                TabControlButton[i].Size = new Size(80, 30);
+                TabControlButton[i].Location = new Point(0 + 80 * i, 0);
+            }
+
+            CloseButton.Size = new Size(80, 30);
+            CloseButton.Location = new Point(Size.Width - 80, 0);
+
+            UpperPanel.Size = new Size(Size.Width, 30);
+            UpperPanel.Location = new Point(0, 0);
+
+            SchedulePage.Size = new Size(Size.Width, Size.Height - 30);
+            SchedulePage.Location = new Point(0, 30);
         }
 
-        private void Main_Paint(object sender, PaintEventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
-            Graphics g = e.Graphics;
-            
+            Application.Exit();
+            //Close();
+        }
 
-            Rectangle rect1 = new Rectangle(0, 0, Size.Width + 20, 30);
-            g.DrawImage(Properties.Resources.window, rect1);
+        private void Change_Tab(int PageIndex)
+        {
+            SchedulePage.SelectedIndex = PageIndex;
+        }
 
-            Rectangle rect2 = new Rectangle(Size.Width - 30, 0, 30, 30);
-            g.DrawImage(Properties.Resources.exit, rect2);
+        private void WindowPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (MouseButtons == MouseButtons.Left)
+            {
+                Lastpos = e.Location;
+                isDragging = true;
+            }
+        }
+
+        private void WindowPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                Location = new Point(Location.X - Lastpos.X + e.X, Location.Y - Lastpos.Y + e.Y);
+            }
+        }
+
+        private void WindowPanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            isDragging = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

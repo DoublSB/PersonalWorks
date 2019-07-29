@@ -96,6 +96,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\ControlTab_01.png" />
+    <Content Include="Resources\ControlTab_02.png" />
+    <Content Include="Resources\ControlTab_03.png" />
+    <Content Include="Resources\ControlTab_04.png" />
+    <Content Include="Resources\ControlTab_05.png" />
     <Content Include="Resources\Icon.ico" />
     <Content Include="Resources\exit.png" />
     <Content Include="Resources\window.png" />
