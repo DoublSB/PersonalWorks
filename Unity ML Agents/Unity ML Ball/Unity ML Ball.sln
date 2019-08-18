@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity ML Ball", "Unity ML Ball.csproj", "{72349EFD-9773-C059-E1A0-3E8224FDF172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity ML Ball.Editor", "Unity ML Ball.Editor.csproj", "{3EDA512C-FCD6-952F-DDD2-5E7F0BB62996}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72349EFD-9773-C059-E1A0-3E8224FDF172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72349EFD-9773-C059-E1A0-3E8224FDF172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72349EFD-9773-C059-E1A0-3E8224FDF172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72349EFD-9773-C059-E1A0-3E8224FDF172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EDA512C-FCD6-952F-DDD2-5E7F0BB62996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDA512C-FCD6-952F-DDD2-5E7F0BB62996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDA512C-FCD6-952F-DDD2-5E7F0BB62996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDA512C-FCD6-952F-DDD2-5E7F0BB62996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
