@@ -1,0 +1,8 @@
+Unity ML Agents/Unity ML Ball/ProjectSettings/
+Unity ML Agents/Unity ML Ball/Library/**
+Unity ML Agents/Unity ML Ball/Temp/
+Unity ML Agents/Unity ML Ball/.vs/
+Unity ML Agents/Unity ML Ball/.vs/**
+Unity ML Agents/Unity ML Ball/
+
+*.csproj
